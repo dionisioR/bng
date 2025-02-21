@@ -1,0 +1,11 @@
+{
+    "name": "sys4soft/bng",
+    "description": "Aplicacao de gestao de name gathering",
+    "type": "project",
+    "authors": [
+        {
+            "name": "dio"
+        }
+    ],
+    "require": {}
+}
