@@ -2,3 +2,33 @@ COMPOSER
 https://getcomposer.org/ 
 
 composer --version
+
+CONFIGURAÇÃO AUTOLOAD
+========================================
+Toda vez que configurarmos o autoload devemos executar esse comando no terminal
+    composer dump-autoload - o
+
+Esse comando vai reconfigurara o diretório vendor .
+
+
+Exemplo:
+{
+    "name": "sys4soft/bng",
+    "description": "Aplicacao de gestao de name gathering",
+    "type": "project",
+    "authors": [
+        {
+            "name": "dio"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "NAMESPACA":"CAMINHO"
+            "bng\\Controllers\\": ["app/Controllers"]           
+        },
+        "files": ["app/config.php"]
+
+    }
+
+}
