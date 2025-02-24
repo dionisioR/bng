@@ -15,6 +15,7 @@ class ComposerStaticInit5cb15ba1d84f8ecde0d12664d8006a87
         'b' => 
         array (
             'bng\\System\\' => 11,
+            'bng\\Models\\' => 11,
             'bng\\Controllers\\' => 16,
         ),
     );
@@ -23,6 +24,10 @@ class ComposerStaticInit5cb15ba1d84f8ecde0d12664d8006a87
         'bng\\System\\' => 
         array (
             0 => __DIR__ . '/../..' . '/app/System',
+        ),
+        'bng\\Models\\' => 
+        array (
+            0 => __DIR__ . '/../..' . '/app/models',
         ),
         'bng\\Controllers\\' => 
         array (
@@ -33,7 +38,11 @@ class ComposerStaticInit5cb15ba1d84f8ecde0d12664d8006a87
     public static $classMap = array (
         'Composer\\InstalledVersions' => __DIR__ . '/..' . '/composer/InstalledVersions.php',
         'bgn\\System\\Router' => __DIR__ . '/../..' . '/app/System/Router.php',
+        'bng\\Controllers\\BaseController' => __DIR__ . '/../..' . '/app/Controllers/BaseController.php',
         'bng\\Controllers\\Main' => __DIR__ . '/../..' . '/app/Controllers/Main.php',
+        'bng\\Models\\Agents' => __DIR__ . '/../..' . '/app/models/Agents.php',
+        'bng\\Models\\BaseModel' => __DIR__ . '/../..' . '/app/models/BaseModel.php',
+        'bng\\System\\Database' => __DIR__ . '/../..' . '/app/System/Database.php',
     );
 
     public static function getInitializer(ClassLoader $loader)

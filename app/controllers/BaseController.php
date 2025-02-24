@@ -4,12 +4,23 @@ namespace bng\Controllers;
 
 abstract class BaseController
 {
-    public function view(){
-        // require_once ("../app/views/layouts/html_header.php");
-        // require_once ("../app/views/layouts/html_footer.php");
-        require_once(__DIR__ . "/../views/layouts/html_header.php");
-        echo "<h1>Base Controller</h1>";
-        require_once(__DIR__ . "/../views/layouts/html_footer.php");
+    public function view($view, $data = []){
 
+        // check if data is array
+        if(!is_array($data)){
+            die("Data is not an array: " . var_dump($data));
+        }
+
+        // transforms data into variables
+        extract($data);
+
+        // includes the file if exists
+        if(file_exists("../app/views/$view.php")){
+            require_once("../app/views/$view.php");
+        } else {
+            die("View does not exist: " . $view);
+        }
+
+       
     }
 }

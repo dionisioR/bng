@@ -8,5 +8,9 @@ $baseDir = dirname($vendorDir);
 return array(
     'Composer\\InstalledVersions' => $vendorDir . '/composer/InstalledVersions.php',
     'bgn\\System\\Router' => $baseDir . '/app/System/Router.php',
+    'bng\\Controllers\\BaseController' => $baseDir . '/app/Controllers/BaseController.php',
     'bng\\Controllers\\Main' => $baseDir . '/app/Controllers/Main.php',
+    'bng\\Models\\Agents' => $baseDir . '/app/models/Agents.php',
+    'bng\\Models\\BaseModel' => $baseDir . '/app/models/BaseModel.php',
+    'bng\\System\\Database' => $baseDir . '/app/System/Database.php',
 );
