@@ -27,22 +27,28 @@
                                 <a href="#">Esqueci-me da password!</a>
                             </div>
 
-                          
 
-                            <?php if(!empty($validation_errors)): ?>
-                                <div class="alert alert-danger p-2 text-center" >
-                                  
-                                        <?php foreach($validation_errors as $error): ?>
-                                            <div><?= $error ?></div>
-                                        <?php endforeach; ?>
-                                
+
+                            <?php if (!empty($validation_errors)): ?>
+                                <div class="alert alert-danger p-2 text-center">
+
+                                    <?php foreach ($validation_errors as $error): ?>
+                                        <div><?= $error ?></div>
+                                    <?php endforeach; ?>
+
+                                </div>
+                            <?php endif; ?>
+
+                            <?php if (!empty($server_error)): ?>
+                                <div class="alert alert-danger p-2 text-center">
+                                    <div><?= $server_error ?></div>
                                 </div>
                             <?php endif; ?>
 
                         </form>
                     </div>
                 </div>
-                
+
             </div>
         </div>
     </div>

@@ -11,10 +11,10 @@ abstract class BaseModel
     public function db_connect()
     {
         $options = [
-            "host" => MYSQL_HOST,
-            "database" => MYSQL_DATABASE,
-            "username" => MYSQL_USERNAME,
-            "password" => MYSQL_PASSWORD
+            'host' => MYSQL_HOST,
+            'database' => MYSQL_DATABASE,
+            'username' => MYSQL_USERNAME,
+            'password' => MYSQL_PASSWORD
         ];
         $this->db = new Database($options);
     }
@@ -24,12 +24,8 @@ abstract class BaseModel
         return $this->db->execute_query($sql, $params);
     }
 
-    public function get_results(){
-        $params = [
-            'profile' => 'admin'
-        ];
-        $this->db_connect();
-        return $this->query("SELECT * FROM agents WHERE profile = :profile", $params);
+    public function non_query($sql = "", $params = [])
+    {
+        return $this->db->execute_non_query($sql, $params);
     }
 }
-
