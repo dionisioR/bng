@@ -40,9 +40,9 @@
                                 <td class="text-center"><?= $client->phone ?></td>
                                 <td><?= $client->interests ?></td>
                                 <td class="text-end">
-                                    <a class="text-decoration-none" href="?ct=agent&mt=edit_client&id=<?= $client->id ?>"><i class="bi bi-pencil-fill"></i>&nbsp;&nbsp; Editar</a>
+                                    <a class="text-decoration-none" href="?ct=agent&mt=edit_client&id=<?= aes_encrypt($client->id) ?>"><i class="bi bi-pencil-fill"></i>&nbsp;&nbsp; Editar</a>
                                     <span class="mx-2 opacity-50">|</span>
-                                    <a class="text-decoration-none" href="?ct=agent&mt=delete_client&id=<?= $client->id ?>"><i class="bi bi-trash-fill"></i>&nbsp;&nbsp; Eliminar</a>
+                                    <a class="text-decoration-none" href="?ct=agent&mt=delete_client&id=<?= aes_encrypt($client->id) ?>"><i class="bi bi-trash-fill"></i>&nbsp;&nbsp; Eliminar</a>
                                 </td>
                             </tr>
                         <?php endforeach; ?>

@@ -39,10 +39,16 @@ class Agent extends BaseController
         $data['user'] = $_SESSION['user'];
         $data["flatpickr"] = true;
 
-         // check if there are validation errors
-         if(!empty($_SESSION['validation_errors'])){
+        // check if there are validation errors
+        if (!empty($_SESSION['validation_errors'])) {
             $data['validation_errors'] = $_SESSION['validation_errors'];
             unset($_SESSION['validation_errors']);
+        }
+
+        // check if there is a server erro
+        if (!empty($_SESSION['server_error'])) {
+            $data['server_error'] = $_SESSION['server_error'];
+            unset($_SESSION['server_error']);
         }
 
         $this->view('layouts/html_header', $data);
@@ -116,24 +122,35 @@ class Agent extends BaseController
             return;
         }
 
-        printData($_POST);
+        // check if the client already exists with the same name
+        $model = new Agents();
+        $results = $model->check_if_client_exists($_POST);
 
-        /* 
-       criar a possibilidade dos inputs irem para o formulário novamente? old()
-       */
-        printData($_POST);
+        if ($results['status']) {
+
+            // a person with the same name exists for this agent. Returns a server error
+            $_SESSION['server_error'] = "Já existe um cliente com esse nome.";
+            $this->new_client_frm();
+            return;
+        }
+
+        // add new client to the database
+        $model->add_new_client_to_database($_POST);
+
+        // return to the main clients page
+        $this->my_clients();
     }
 
 
     // =======================================================
     public function edit_client($id)
     {
-        echo "editar $id";
+        echo "editar " . aes_decrypt($id);
     }
 
     // =======================================================
     public function delete_client($id)
     {
-        echo "eliminar $id";
+        echo "eliminar " . aes_decrypt($id);;
     }
 }

@@ -20,3 +20,8 @@
 [2025-02-28T09:56:52.835343-03:00] registo_logs.INFO: agente1@bng.com - login com sucesso [] []
 [2025-02-28T10:20:33.751837-03:00] registo_logs.INFO: agente1@bng.com - fez logout [] []
 [2025-02-28T10:20:45.505749-03:00] registo_logs.INFO: agente1@bng.com - login com sucesso [] []
+[2025-02-28T15:04:17.194898-03:00] registo_logs.INFO: agente1@bng.com - login com sucesso [] []
+[2025-02-28T15:35:49.509429-03:00] registo_logs.INFO: agente1@bng.com - fez logout [] []
+[2025-02-28T15:36:01.937130-03:00] registo_logs.INFO: agente2@bng.com - login com sucesso [] []
+[2025-02-28T15:36:12.761021-03:00] registo_logs.INFO: agente2@bng.com - fez logout [] []
+[2025-02-28T15:36:20.961025-03:00] registo_logs.INFO: agente1@bng.com - login com sucesso [] []
