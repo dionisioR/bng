@@ -15,7 +15,7 @@
 
             <!-- adicionar clientes -->
             <?php if ($user->profile == 'agent'): ?>
-                <a href="#" class="unlink m-2">
+                <a href="?ct=agent&mt=new_client_frm" class="unlink m-2">
                     <div class="home-option p-5 text-center">
                         <h3 class="mb-3"><i class="bi bi-person-plus-fill"></i></h3>
                         <h5>Adicionar clientes</h5>
