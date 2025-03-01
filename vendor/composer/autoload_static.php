@@ -182,6 +182,7 @@ class ComposerStaticInit5cb15ba1d84f8ecde0d12664d8006a87
         'Psr\\Log\\LoggerTrait' => __DIR__ . '/..' . '/psr/log/src/LoggerTrait.php',
         'Psr\\Log\\NullLogger' => __DIR__ . '/..' . '/psr/log/src/NullLogger.php',
         'bgn\\System\\Router' => __DIR__ . '/../..' . '/app/System/Router.php',
+        'bng\\Controllers\\Agent' => __DIR__ . '/../..' . '/app/Controllers/Agent.php',
         'bng\\Controllers\\BaseController' => __DIR__ . '/../..' . '/app/Controllers/BaseController.php',
         'bng\\Controllers\\Main' => __DIR__ . '/../..' . '/app/Controllers/Main.php',
         'bng\\Models\\Agents' => __DIR__ . '/../..' . '/app/models/Agents.php',

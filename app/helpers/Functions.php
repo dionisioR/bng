@@ -64,6 +64,11 @@ function aes_decrypt($value)
 }
 
 //============================================================
+function get_active_user_name()
+{
+    return $_SESSION['user']->name;
+}
+//============================================================
 function printData($data, $die = true)
 {
     echo "<pre>";

@@ -136,6 +136,7 @@ return array(
     'Psr\\Log\\LoggerTrait' => $vendorDir . '/psr/log/src/LoggerTrait.php',
     'Psr\\Log\\NullLogger' => $vendorDir . '/psr/log/src/NullLogger.php',
     'bgn\\System\\Router' => $baseDir . '/app/System/Router.php',
+    'bng\\Controllers\\Agent' => $baseDir . '/app/Controllers/Agent.php',
     'bng\\Controllers\\BaseController' => $baseDir . '/app/Controllers/BaseController.php',
     'bng\\Controllers\\Main' => $baseDir . '/app/Controllers/Main.php',
     'bng\\Models\\Agents' => $baseDir . '/app/models/Agents.php',
