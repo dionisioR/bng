@@ -18,7 +18,7 @@
             <?php if (empty($clients)): ?>
                 <p class="my-5 text-center opacity-75">Não existem clientes registados.</p>
             <?php else: ?>
-                <table class="table table-striped table-bordered">
+                <table class="table table-striped table-bordered mt-5" id="table_clients">
                     <thead class="table-dark">
                         <tr>
                             <th>Nome</th>
@@ -62,3 +62,40 @@
         </div>
     </div>
 </div>
+
+
+
+<script>
+    $(document).ready(function() {
+
+        // datatable
+        $('#table_clients').DataTable({
+            pageLength: 10,
+            pagingType: "full_numbers",
+            language: {
+                decimal: "",
+                emptyTable: "Sem dados disponíveis na tabela.",
+                info: "Mostrando _START_ até _END_ de _TOTAL_ registos",
+                infoEmpty: "Mostrando 0 até 0 de 0 registos",
+                infoFiltered: "(Filtrando _MAX_ total de registos)",
+                infoPostFix: "",
+                thousands: ",",
+                lengthMenu: "Mostrando _MENU_ registos por página.",
+                loadingRecords: "Carregando...",
+                processing: "Processando...",
+                search: "Filtrar:",
+                zeroRecords: "Nenhum registro encontrado.",
+                paginate: {
+                    first: "Primeira",
+                    last: "Última",
+                    next: "Seguinte",
+                    previous: "Anterior"
+                },
+                aria: {
+                    sortAscending: ": ative para classificar a coluna em ordem crescente.",
+                    sortDescending: ": ative para classificar a coluna em ordem decrescente."
+                }
+            }
+        });
+    })
+</script>

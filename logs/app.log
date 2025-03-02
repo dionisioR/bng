@@ -33,3 +33,6 @@
 [2025-03-01T18:35:42.223147-03:00] registo_logs.INFO: agente1@bng.com - adicionou novo cliente: delete@g.com [] []
 [2025-03-01T18:35:53.331506-03:00] registo_logs.INFO: agente1@bng.com - atualizou dados do cliente ID: 8 [] []
 [2025-03-01T18:42:11.077875-03:00] registo_logs.INFO: Micro - Eliminado o cliente id: 8 [] []
+[2025-03-02T08:25:00.035117-03:00] registo_logs.INFO: agente1@bng.com - login com sucesso [] []
+[2025-03-02T08:46:12.871323-03:00] registo_logs.INFO: agente1@bng.com - fez logout [] []
+[2025-03-02T08:50:53.148415-03:00] registo_logs.INFO: agente1@bng.com - login com sucesso [] []

@@ -20,11 +20,27 @@
     <!-- custom css -->
     <link rel="stylesheet" href="assets/app.css">
 
+
+    <!-- jquery -->
+    <script src="assets/jquery/jquery-3.6.0.min.js"></script>
+
+    <!-- datatables -->
+    <link rel="stylesheet" href="assets/datatables/datatables.css">
+    <script src="assets/datatables/datatables.js"></script>
+
+
     <?php if (isset($flatpickr)): ?>
         <!-- flatpickr -->
         <link rel="stylesheet" href="assets/flatpickr/flatpickr.min.css">
         <script src="assets/flatpickr/flatpickr.js"></script>
     <?php endif; ?>
+
+
+    <style>
+        .dataTables_length, .dataTables_filter{
+            margin-bottom: 15px;
+        }
+    </style>
 </head>
 
 <body>
