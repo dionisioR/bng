@@ -25,7 +25,7 @@
 
             <!-- carregar ficheiro de clientes -->
             <?php if ($user->profile == 'agent'): ?>
-                <a href="#" class="unlink m-2">
+                <a href="?ct=agent&mt=upload_file_frm" class="unlink m-2">
                     <div class="home-option p-5 text-center">
                         <h3 class="mb-3"><i class="bi bi-cloud-upload-fill"></i></h3>
                         <h5>Carregar ficheiro</h5>
@@ -35,7 +35,7 @@
 
             <!-- clientes -->
             <?php if ($user->profile == 'admin'): ?>
-                <a href="#" class="unlink m-2">
+                <a href="?ct=admin&mt=all_clients" class="unlink m-2">
                     <div class="home-option p-5 text-center">
                         <h3 class="mb-3"><i class="bi bi-people-fill"></i></h3>
                         <h5>Clientes</h5>
