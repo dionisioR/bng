@@ -71,3 +71,5 @@
 [2025-03-03T15:13:12.115145-03:00] registo_logs.INFO: admin@bng.com - login com sucesso [] []
 [2025-03-03T15:15:58.073997-03:00] registo_logs.INFO: admin@bng.com - fez download da lista de clientes para o ficheiro: output_1741025757.xlsx | total: 12 registos. [] []
 [2025-03-03T15:18:33.322617-03:00] registo_logs.INFO: admin@bng.com - fez download da lista de clientes para o ficheiro: output_1741025913.xlsx | total: 12 registos. [] []
+[2025-03-05T09:00:55.624103-03:00] registo_logs.INFO: admin@bng.com - login com sucesso [] []
+[2025-03-05T10:52:39.910756-03:00] registo_logs.INFO: admin@bng.com - visualizou o PDF com o report estatístico. [] []

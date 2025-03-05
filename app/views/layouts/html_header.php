@@ -35,6 +35,11 @@
         <script src="assets/flatpickr/flatpickr.js"></script>
     <?php endif; ?>
 
+    <?php if (isset($chartjs)) : ?>
+        <!-- chartjs -->
+        <script src="assets/chartjs/chart.min.js"></script>
+    <?php endif; ?>
+
 
     <style>
         .dataTables_length, .dataTables_filter{
